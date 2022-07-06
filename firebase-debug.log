@@ -1,0 +1,69 @@
+[debug] [2022-07-06T06:36:00.275Z] ----------------------------------------------------------------------
+[debug] [2022-07-06T06:36:00.279Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-07-06T06:36:00.280Z] CLI Version:   11.2.0
+[debug] [2022-07-06T06:36:00.280Z] Platform:      darwin
+[debug] [2022-07-06T06:36:00.280Z] Node Version:  v16.15.0
+[debug] [2022-07-06T06:36:00.297Z] Time:          Wed Jul 06 2022 12:06:00 GMT+0530 (India Standard Time)
+[debug] [2022-07-06T06:36:00.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-06T06:36:00.302Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-07-06T06:36:00.334Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-06T06:36:00.335Z] > authorizing via signed-in user (ayusht420@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ayushtripathi/Desktop/resumeProjects/Todo/todo-app
+
+[debug] [2022-07-06T06:36:01.436Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-07-06T06:36:01.439Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-06T06:37:34.143Z] > refreshing access token with scopes: []
+[debug] [2022-07-06T06:37:34.145Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-06T06:37:34.145Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-06T06:37:34.384Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-06T06:37:34.384Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-06T06:37:34.429Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-06T06:37:35.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-06T06:37:35.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todo-app-d3349 (todo-app) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-07-06T06:39:21.784Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-07-06T06:39:21.985Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-07-06T06:39:21.985Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.4","browserURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/ayushtripathi/Desktop/resumeProjects/Todo/todo-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1026286461&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-06T06:39:33.062Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-06T06:39:33.062Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-06T06:39:33.469Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-06T06:39:33.470Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-06T06:39:33.488Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-06T06:39:33.944Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-06T06:39:33.944Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"SpecterHunt","id":66113530,"node_id":"MDQ6VXNlcjY2MTEzNTMw","avatar_url":"https://avatars.githubusercontent.com/u/66113530?v=4","gravatar_id":"","url":"https://api.github.com/users/SpecterHunt","html_url":"https://github.com/SpecterHunt","followers_url":"https://api.github.com/users/SpecterHunt/followers","following_url":"https://api.github.com/users/SpecterHunt/following{/other_user}","gists_url":"https://api.github.com/users/SpecterHunt/gists{/gist_id}","starred_url":"https://api.github.com/users/SpecterHunt/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/SpecterHunt/subscriptions","organizations_url":"https://api.github.com/users/SpecterHunt/orgs","repos_url":"https://api.github.com/users/SpecterHunt/repos","events_url":"https://api.github.com/users/SpecterHunt/events{/privacy}","received_events_url":"https://api.github.com/users/SpecterHunt/received_events","type":"User","site_admin":false,"name":"Ayush Tripathi","company":"Wipro","blog":"","location":"Dibiyapur(U.P) India","email":null,"hireable":null,"bio":"Project Engineer","twitter_username":null,"public_repos":5,"public_gists":0,"followers":1,"following":1,"created_at":"2020-05-29T08:28:21Z","updated_at":"2022-07-06T06:39:28Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":2794,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as SpecterHunt 
+[info] 
